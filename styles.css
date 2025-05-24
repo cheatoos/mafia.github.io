@@ -1,0 +1,37 @@
+:root {
+  --primary: #FF6B35;
+  --secondary: #FF0000;
+  --dark: #292929;
+  --light: #FFF5E6;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--light);
+  color: var(--dark);
+}
+
+header {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+.btn-primary {
+  background: var(--primary);
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  background: var(--secondary);
+  transform: translateY(-2px);
+}
+
+.mod-card {
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  transition: transform 0.3s;
+}
+
+.mod-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(255, 107, 53, 0.1);
+}
