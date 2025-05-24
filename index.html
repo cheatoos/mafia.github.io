@@ -1,57 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
-    <title>Game Guides Hub</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #FFF5E6; /* jasny pomarańcz */
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: linear-gradient(to right, #FF6B35, #FF0000); /* pomarańcz do czerwonego */
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        .product-card {
-            background: #FFE0CC;
-            border: 2px solid #FF6B35;
-            border-radius: 10px;
-            padding: 15px;
-            margin: 10px;
-        }
-        button {
-            background-color: #FF6B35;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #FF0000;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameMods Hub | Premium Mods</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Game Guides Hub</h1>
-        <p>Legal tips and strategies for your favorite games</p>
-    </header>
-
-    <div class="product-card">
-        <h2>Advanced Game Strategies</h2>
-        <p>Learn professional techniques to improve your gameplay.</p>
-        <button>View Guide</button>
+  <header class="py-4 text-white">
+    <div class="container">
+      <h1 class="text-3xl font-bold">GameMods Hub</h1>
+      <div id="auth-section"></div>
     </div>
+  </header>
 
-    <div class="product-card">
-        <h2>Secret Locations</h2>
-        <p>Discover hidden areas in popular games.</p>
-        <button>View Guide</button>
-    </div>
+  <main class="container py-8">
+    <section id="mods-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Mody będą ładowane przez JS -->
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+  <script src="auth/github-auth.js"></script>
 </body>
 </html>
